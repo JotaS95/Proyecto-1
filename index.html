@@ -1,0 +1,153 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>CandyBarbi | Home</title>
+  <!-- bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  <link href="assets/css/main.css" rel="stylesheet">
+</head>
+
+<body class="theme-light">
+  <!-- Inicio del cuerpo de la página -->
+  <header class="sticky-top shadow-sm bg-white">
+    <!--encabezado principal de la página. Clases de Bootstrap para hacerlo fijo (sticky-top) y con sombra/fondo. -->
+    <nav class="navbar container">
+      <!-- Define la barra de navegación. Utiliza clases de Bootstrap para el layout responsivo (container) -->
+      <a class="navbar-brand d-flex align-items-center me-4" href="index.html">
+        <!-- Enlace de la marca/logo que lleva a la página de inicio -->
+        <img src="assets/img/placeholders/logo-S.F.png" alt="CandyBarbi logo" width="80" height="60" class="me-2">
+        <span class="brand-title">CandyBarbi</span>
+      </a>
+      <button class="navbar-menu-toggle d-none d-md-none" type="button" id="menuToggle" aria-label="Toggle navigation">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <ul class="navbar-nav flex-row gap-3" id="navbarMenu">
+        <li class="nav-item"><a class="nav-link active" href="index.html" aria-current="page">Inicio</a></li>
+        <li class="nav-item"><a class="nav-link" href="./productos.html">Productos</a></li>
+        <li class="nav-item"><a class="nav-link" href="./sobre-nosotros.html">Sobre nosotros</a></li>
+        <li class="nav-item"><a class="nav-link" href="./contacto.html">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Contenedor principal-->
+    <section class="hero container py-5">
+      <!-- Sección principal (hero section). Utiliza container para centrado y padding vertical. -->
+      <div class="row align-items-center g-4">
+        <!-- Fila de Bootstrap para layout responsivo, alineación vertical y espaciado (gap) -->
+        <div class="col-12 col-md-5 text-center">
+          <!-- Columna para la imagen (ocupa 12 columnas en móvil, 5 en mediano+) -->
+          <img src="assets/img/placeholders/barbi-isla.jpg" alt="Bárbara Guichapirén Miranda, propietaria de CandyBarbi"
+            class="img-fluid rounded-4 owner-portrait" width="560" height="560" loading="lazy">
+        </div>
+        <div class="col-12 col-md-7">
+          <h1 class="display-5 text-primary">Bárbara Guichapirén Miranda, <br>CandyBarbi</h1>
+          <!-- Título principal de la página, con clases de estilo de Bootstrap -->
+          <h2>Dulces y chocolates artesanales</h2>
+          <p class="lead-text-secondary">Elaboramos dulces artesanales con esmero y dedicación, utilizando ingredientes
+            de primera calidad cuidando cada creación para lograr su sabor, textura y alegría de
+            cada producto.</p>
+          <div class="d-flex gap-3 mt-3">
+            <a href="productos.html" class="btn btn-primary btn-lg">Explora nuestros productos</a>
+            <a href="sobre-nosotros.html" class="btn btn-outline-primary btn-lg">Our Story</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="container py-5">
+      <!-- Sección para mostrar categorías destacadas -->
+      <h2 class="h3 mb-4">Categorías destacadas</h2>
+      <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-4 g-4">
+        <!-- Grid responsivo que cambia el número de columnas según el tamaño de pantalla -->
+        <div class="col">
+          <!-- Columna individual dentro del grid -->
+          <a class="card card-hover h-100" href="products/confiteria.html">
+            <!-- Enlace que envuelve una "tarjeta" (card) completa, haciéndola clicable -->
+            <img src="assets/img/placeholders/destacados/confites.jpg" class="card-img-top" alt="Confites" width="400"
+              height="350" loading="lazy">
+            <div class="card-body">
+              <h3 class="card-title h5">Confiteria</h3>
+            </div>
+          </a>
+        </div>
+        <!-- Se repite la estructura 'col' para Alfajores, Malvas y Chocolates -->
+        <div class="col">
+          <a class="card card-hover h-100" href="products/alfajores.html">
+            <img src="assets/img/placeholders/destacados/alfajorcitos.webp" class="card-img-top" alt="Alfajores"
+              width="400" height="350" loading="lazy">
+            <div class="card-body">
+              <h3 class="card-title h5">Alfajores</h3>
+            </div>
+          </a>
+        </div>
+        <div class="col">
+          <a class="card card-hover h-100" href="products/malvas.html">
+            <img src="assets/img/placeholders/destacados/marshmellows.jpg" class="card-img-top" alt="Malva" width="400"
+              height="350" loading="lazy">
+            <div class="card-body">
+              <h3 class="card-title h5">Malvas</h3>
+            </div>
+          </a>
+        </div>
+        <div class="col">
+          <a class="card card-hover h-100" href="products/chocolates.html">
+            <img src="assets/img/placeholders/destacados/bolitas-chocolate.jpg" class="card-img-top" alt="chocolates"
+              width="400" height="350" loading="lazy">
+            <div class="card-body">
+              <h3 class="card-title h5">Chocolates</h3>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer mt-auto py-4 bg-light">
+    <!-- Define el pie de página de la web, con margen superior automático, padding y fondo claro -->
+    <div class="container d-flex justify-content-between align-items-center">
+      <!-- Contenedor interno con flexbox para alinear elementos a los extremos opuestos -->
+      <p class="mb-0">© 2025 CandyBarbi — Magallanes-Punta Arenas-Chile</p>
+      <!-- Párrafo de derechos de autor -->
+      <div>
+        <a href="contacto.html" class="link-primary">Contacto</a>
+        <!-- Enlace de contacto -->
+      </div>
+    </div>
+  </footer>
+
+      <!-- bootstrap -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+  
+  <script>
+    // Menú hamburguesa personalizado
+    const menuToggle = document.getElementById('menuToggle');
+    const navbarMenu = document.getElementById('navbarMenu');
+    
+    if (menuToggle) {
+      menuToggle.addEventListener('click', function() {
+        this.classList.toggle('active');
+        navbarMenu.classList.toggle('active');
+      });
+      
+      // Cerrar menú al hacer clic en un enlace
+      navbarMenu.querySelectorAll('.nav-link').forEach(link => {
+        link.addEventListener('click', function() {
+          menuToggle.classList.remove('active');
+          navbarMenu.classList.remove('active');
+        });
+      });
+    }
+  </script>
+
+</body>
+
+</html>

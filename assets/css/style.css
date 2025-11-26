@@ -1,10 +1,10 @@
-/* Error: Undefined variable.
+/* Error: expected "{".
  *   ,
- * 5 |   color: $color-text;
- *   |          ^^^^^^^^^^^
+ * 1 | .@use '../settings/variables' as *;
+ *   |                                   ^
  *   '
- *   scss\base\_base.scss 5:10  @use
- *   scss\style.scss 4:1        root stylesheet */
+ *   scss\layout\_layout.scss 1:35  @use
+ *   scss\style.scss 5:1            root stylesheet */
 
 body::before {
   font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
@@ -14,5 +14,5 @@ body::before {
   padding: 1em;
   margin-bottom: 1em;
   border-bottom: 2px solid black;
-  content: "Error: Undefined variable.\a   \2577 \a 5 \2502    color: $color-text;\d\a   \2502           ^^^^^^^^^^^\a   \2575 \a   scss\\base\\_base.scss 5:10  @use\a   scss\\style.scss 4:1        root stylesheet";
+  content: "Error: expected \"{\".\a   \2577 \a 1 \2502  .@use '../settings/variables' as *;\d\a   \2502                                    ^\a   \2575 \a   scss\\layout\\_layout.scss 1:35  @use\a   scss\\style.scss 5:1            root stylesheet";
 }

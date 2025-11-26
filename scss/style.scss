@@ -1,20 +1,9 @@
 /* Selector universal*/
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+@import 'settings/variables';
+@import 'base/reset';
+@import 'base/base';
+@import 'layout/layout';
+@import 'components/components';
+@import 'utilities/utilities';
 
-body {
-
-    background-image: url(../img/dulces-l.derecho.png);
-
-    background-size: cover;
-    @import 'settings/variables';
-    @import 'base/reset';
-    @import 'base/base';
-    @import 'layout/layout';
-    @import 'components/components';
-    @import 'utilities/utilities';
-
-    /* Archivo principal que importa los partials en orden (organizados en carpetas) */
+/* Archivo principal que importa los partials en orden (organizados en carpetas) */

@@ -1,0 +1,33 @@
+/* Estilos base (sin importar variables aquí; se importan desde style.scss) */
+body {
+  background-image: url(../img/dulces-l.derecho.png);
+  background-size: cover;
+  color: $color-text;
+  line-height: 1.6;
+}
+
+h1,h2,h3,h4,h5 {
+  color: $color-primary;
+}
+
+.lead-text-secondary {
+  font-style: italic;
+  font-weight: bold;
+  font-size: large;
+}
+
+.brand-title {
+  font-weight: 700;
+  letter-spacing: .5px;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0,0,0,0);
+  border: 0;
+}

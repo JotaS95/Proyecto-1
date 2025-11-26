@@ -1,4 +1,6 @@
-/* Estilos base (sin importar variables aquí; se importan desde style.scss) */
+@use '../settings/variables' as *;
+
+/* Estilos base */
 body {
   background-image: url(../img/dulces-l.derecho.png);
   background-size: cover;

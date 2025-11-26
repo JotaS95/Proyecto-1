@@ -1,9 +1,9 @@
 /* Selector universal*/
-@import 'settings/variables';
-@import 'base/reset';
-@import 'base/base';
-@import 'layout/layout';
-@import 'components/components';
-@import 'utilities/utilities';
+@use 'settings/variables' as *;
+@use 'base/reset';
+@use 'base/base';
+@use 'layout/layout';
+@use 'components/components';
+@use 'utilities/utilities';
 
 /* Archivo principal que importa los partials en orden (organizados en carpetas) */

@@ -1,0 +1,4 @@
+@use '../abstracts/mixins' as *;
+
+.hero .display-5 { @include fluid-title(2rem, 3rem); }
+

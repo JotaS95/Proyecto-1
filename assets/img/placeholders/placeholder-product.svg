@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="300" viewBox="0 0 400 300" fill="none">
+  <rect width="400" height="300" rx="16" fill="#f7f7f7"/>
+  <circle cx="140" cy="150" r="70" fill="#ffcfda"/>
+  <circle cx="260" cy="150" r="70" fill="#b23a48" opacity=".9"/>
+  <text x="200" y="165" text-anchor="middle" font-size="20" font-family="Arial" fill="#6c757d">CandyBarbi</text>
+</svg>
+

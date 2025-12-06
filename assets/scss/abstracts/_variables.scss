@@ -1,0 +1,28 @@
+$colors: (
+  primary: #b23a48,
+  secondary: #6c757d,
+  accent: #ffcfda,
+  dark: #1f1f1f,
+  light: #ffffff,
+  muted: #f7f7f7
+);
+
+$spacing-scale: (
+  xs: 0.25rem,
+  sm: 0.5rem,
+  md: 1rem,
+  lg: 1.5rem,
+  xl: 2rem
+);
+
+$radius: 0.75rem;
+$shadow-soft: 0 6px 24px rgba(0,0,0,0.08);
+$shadow-hover: 0 12px 32px rgba(0,0,0,0.12);
+
+$breakpoints: (
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px
+);
+

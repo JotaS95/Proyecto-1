@@ -1,0 +1,6 @@
+@use '../abstracts/variables' as *;
+@use '../abstracts/mixins' as *;
+
+.card-title { margin-bottom: .25rem; }
+.card-text { color: map-get($colors, secondary); }
+

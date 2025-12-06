@@ -1,0 +1,19 @@
+@use '../abstracts/variables' as *;
+
+// Generate theme classes using @each
+@each $name, $map in (
+  light: (
+    bg: map-get($colors, light),
+    text: map-get($colors, dark)
+  ),
+  dark: (
+    bg: map-get($colors, dark),
+    text: map-get($colors, light)
+  )
+) {
+  .theme-#{$name} {
+    background-color: map-get($map, bg);
+    color: map-get($map, text);
+  }
+}
+

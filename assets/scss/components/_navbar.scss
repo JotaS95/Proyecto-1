@@ -1,0 +1,7 @@
+@use '../abstracts/variables' as *;
+@use '../abstracts/mixins' as *;
+
+.navbar { padding-block: .75rem; }
+.navbar .nav-link { color: map-get($colors, dark); @include transition(color); }
+.navbar .nav-link:hover, .navbar .nav-link.active { color: map-get($colors, primary); }
+

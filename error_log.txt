@@ -1,0 +1,66 @@
+DEPRECATION WARNING [global-builtin]: Global built-in functions are deprecated and will be removed in Dart Sass 3.0.0.
+Use map.get instead.
+
+More info and automated migrator: https://sass-lang.com/d/import
+
+   ╷
+18 │   @return map-get($theme-colors, $key);
+   │           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   ╵
+    scss\settings\_variables.scss 18:11  get-color()
+    scss\tools\_placeholders.scss 5:12   @forward
+    scss\tools\_index.scss 2:1           @use
+    scss\style.scss 3:1                  root stylesheet
+
+DEPRECATION WARNING [global-builtin]: Global built-in functions are deprecated and will be removed in Dart Sass 3.0.0.
+Use map.get instead.
+
+More info and automated migrator: https://sass-lang.com/d/import
+
+   ╷
+14 │     transition: all map-get($transitions, 'fast');
+   │                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   ╵
+    scss\tools\_placeholders.scss 14:21  @forward
+    scss\tools\_index.scss 2:1           @use
+    scss\style.scss 3:1                  root stylesheet
+
+DEPRECATION WARNING [global-builtin]: Global built-in functions are deprecated and will be removed in Dart Sass 3.0.0.
+Use map.get instead.
+
+More info and automated migrator: https://sass-lang.com/d/import
+
+   ╷
+25 │       transition: all map-get($transitions, 'fast') ease;
+   │                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   ╵
+    scss\layout\_layout.scss 25:23  @use
+    scss\style.scss 6:1             root stylesheet
+
+DEPRECATION WARNING [global-builtin]: Global built-in functions are deprecated and will be removed in Dart Sass 3.0.0.
+Use map.get instead.
+
+More info and automated migrator: https://sass-lang.com/d/import
+
+   ╷
+47 │     transition: color map-get($transitions, 'fast') ease;
+   │                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   ╵
+    scss\layout\_layout.scss 47:23  @use
+    scss\style.scss 6:1             root stylesheet
+
+DEPRECATION WARNING [global-builtin]: Global built-in functions are deprecated and will be removed in Dart Sass 3.0.0.
+Use map.get instead.
+
+More info and automated migrator: https://sass-lang.com/d/import
+
+   ╷
+13 │     transition: transform map-get($transitions, 'fast') ease;
+   │                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   ╵
+    scss\components\_components.scss 13:27  @use
+    scss\style.scss 7:1                     root stylesheet
+
+WARNING: 1 repetitive deprecation warnings omitted.
+Run in verbose mode to see all warnings.
+

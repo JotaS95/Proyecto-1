@@ -1,6 +1,8 @@
+@use '../settings' as *;
+
 %title-base {
     font-weight: 700;
-    color: color('primary');
+    color: get-color('primary');
     margin-bottom: 1rem;
 }
 

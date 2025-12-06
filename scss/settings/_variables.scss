@@ -14,6 +14,6 @@ $transitions: (
 );
 
 // Function to get color from map
-@function color($key) {
+@function get-color($key) {
   @return map-get($theme-colors, $key);
 }

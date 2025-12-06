@@ -1,4 +1,5 @@
 @use '../settings' as *;
+@use '../tools' as *;
 
 /* Tarjetas (cards) y componentes específicos */
 .card {
@@ -23,7 +24,7 @@
   }
 
   &-text {
-    color: color('muted');
+    color: get-color('muted');
   }
 }
 
@@ -33,7 +34,7 @@
 }
 
 .link-secondary {
-  color: color('muted');
+  color: get-color('muted');
 }
 
 /* Navbar toggle */
@@ -49,7 +50,7 @@
   span {
     width: 28px;
     height: 3px;
-    background-color: color('accent');
+    background-color: get-color('accent');
     border-radius: 2px;
     transition: all 0.3s ease;
     display: block;
@@ -71,12 +72,12 @@
 }
 
 .navbar .nav-link {
-  color: color('dark');
+  color: get-color('dark');
   transition: color map-get($transitions, 'fast') ease;
 
   &:hover,
   &.active {
-    color: color('accent');
+    color: get-color('accent');
   }
 }
 
@@ -91,7 +92,7 @@
 
     &:focus {
       outline: none;
-      border-color: color('accent');
+      border-color: get-color('accent');
       box-shadow: 0 0 0 .25rem rgba(178, 58, 72, .15);
     }
   }

@@ -20,7 +20,7 @@
     span {
       width: 28px;
       height: 3px;
-      background-color: color('accent');
+      background-color: get-color('accent');
       border-radius: 2px;
       transition: all map-get($transitions, 'fast') ease;
       display: block;
@@ -43,14 +43,14 @@
 
   // Links styling
   .nav-link {
-    color: color('dark');
+    color: get-color('dark');
     transition: color map-get($transitions, 'fast') ease;
     text-decoration: none;
     font-weight: 500;
 
     &:hover,
     &.active {
-      color: color('accent'); // Active/Hover color
+      color: get-color('accent'); // Active/Hover color
     }
   }
 
@@ -67,7 +67,7 @@
       top: 100%;
       left: 0;
       right: 0;
-      background-color: color('light');
+      background-color: get-color('light');
       padding: 1rem 0;
       border-top: 1px solid #eee;
       max-height: 0;
@@ -103,7 +103,7 @@
   border-top: 1px solid #eee;
 
   p {
-    color: color('muted');
+    color: get-color('muted');
   }
 }
 

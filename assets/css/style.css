@@ -186,7 +186,8 @@ h1, h2, h3, h4, h5 {
 
 /* Utilidades pequeñas */
 .gallery-grid img {
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .gallery-grid .card img {
@@ -199,7 +200,8 @@ h1, h2, h3, h4, h5 {
 
 .about-photos img {
   aspect-ratio: 16/9;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .contact-details a {
@@ -207,7 +209,8 @@ h1, h2, h3, h4, h5 {
 }
 
 .sticky-top {
-  backdrop-filter: saturate(1.2) blur(4px);
+  -webkit-backdrop-filter: saturate(1.2) blur(4px);
+          backdrop-filter: saturate(1.2) blur(4px);
 }
 
 .text-secondary {
@@ -215,4 +218,4 @@ h1, h2, h3, h4, h5 {
   font-style: italic;
 }
 
-/* Archivo principal que importa los partials en orden (organizados en carpetas) */
+/* Archivo principal que importa los partials en orden (organizados en carpetas) *//*# sourceMappingURL=style.css.map */

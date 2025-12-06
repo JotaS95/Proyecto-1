@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description"
+    content="Sobre Nosotros - CandyBarbi. Conoce la historia de Bárbara Guichapirén y su emprendimiento de dulces artesanales.">
+  <meta name="keywords" content="sobre nosotros, historia, candybarbi, emprendimiento, punta arenas">
+  <title>CandyBarbi | Sobre Nosotros</title>
+  <!-- bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  <link href="../assets/css/style.css" rel="stylesheet">
+</head>
+
+<body class="theme-light">
+  <!-- Contenedor del encabezado, se mantiene fijo en la parte superior (sticky-top) y tiene un fondo blanco -->
+  <header class="sticky-top shadow-sm bg-white">
+    <!-- Barra de navegación principal, usa clases de Bootstrap para la estructura y el diseño responsivo -->
+    <nav class="navbar container">
+      <!-- Enlace de la marca (logo y nombre), dirige a la página de inicio -->
+      <a class="navbar-brand d-flex align-items-center me-4" href="../index.html">
+        <!-- Imagen del logo con dimensiones específicas y texto alternativo -->
+        <img src="../assets/img/placeholders/logo-S.F.png" alt="CandyBarbi logo" width="80" height="60" class="me-2">
+        <!-- Texto del nombre de la marca -->
+        <span class="brand-title">CandyBarbi</span>
+      </a>
+      <button class="navbar-menu-toggle d-none d-md-none" type="button" id="menuToggle" aria-label="Toggle navigation">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <!-- Lista de enlaces de navegación, mostrados en una fila (flex-row) con separación -->
+      <ul class="navbar-nav flex-row gap-3" id="navbarMenu">
+        <li class="nav-item"><a class="nav-link" href="../index.html">Inicio</a></li>
+        <li class="nav-item"><a class="nav-link" href="productos.html">Productos</a></li>
+        <!-- Enlace activo para la página actual ("Sobre Nosotros"), resaltado con CSS y atributo aria-current para accesibilidad -->
+        <li class="nav-item"><a class="nav-link active" href="sobre-nosotros.html" aria-current="page">Sobre
+            Nosotros</a></li>
+        <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Contenido principal de la página, -->
+  <main class="container py-5">
+    <!-- Sección dedicada a la historia de la marca -->
+    <section class="mb-5">
+      <!-- Título de la sección -->
+      <h1 class="h2">Nuestra Historia</h1>
+      <p class="lead-text-secondary">Fundada por <strong>Bárbara Guichapirén Miranda</strong>, CandyBarbi comenzó como
+        un pequeño proyecto
+        culinario que celebraba los sabores de la Patagonia. Hoy, elaboramos dulces y chocolates artesanales con
+        ingredientes locales, métodos tradicionales y una dedicación al detalle. <br>CandyBarbi nació el 2020 en plena
+        pandemia nos abrimos camino, hemos participado en variadas
+        ferias y Showroom de Emprendedores.
+        En el presente año realizamos la apertura de nuestro primero local tipo Isla en Zona Austral la plataforma
+        comercial más grande de Punta Arenas.</p>
+    </section>
+    <section>
+      <h2 class="h4 mb-4">Tienda y Equipo</h2>
+      <div class="row row-cols-1 row-cols-md-3 g-4 about-photos">
+        <div class="col">
+          <figure class="card h-100">
+            <img src="../assets/img/img2isla.jpg" alt="imagen de la dueña en el mesón" width="400" height="300"
+              loading="lazy">
+            <figcaption class="card-body">
+              <p class="card-text">Nuestra acogedora tienda en el corazón de Zona Franca Punta Arenas.</p>
+            </figcaption>
+          </figure>
+        </div>
+        <div class="col">
+          <figure class="card h-100">
+            <img src="../assets/img/placeholders/colage.png" alt="Production kitchen" width="400" height="300"
+              loading="lazy">
+            <figcaption class="card-body">
+              <p class="card-text">Cocina de producción CASERA donde cada dulce se elabora
+                <strong>artesanalmente</strong>.
+              </p>
+            </figcaption>
+          </figure>
+        </div>
+        <div class="col">
+          <figure class="card h-100">
+            <img src="../assets/img/isla-perspectiva.jpg" alt="Team at work" width="400" height="300" loading="lazy">
+            <figcaption class="card-body">
+              <p class="card-text">Nuestro amable equipo están listas y preparadas para ayudarte a elegir tus
+                favoritos...</p>
+            </figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer mt-auto py-4 bg-light">
+    <!-- Contenedor del pie de página, distribuye el contenido a los extremos -->
+    <div class="container d-flex justify-content-between align-items-center">
+      <!-- Información de copyright y ubicación -->
+      <p class="mb-0">© 2025 CandyBarbi — Magallanes-Punta Arenas-Chile</p>
+      <!-- Enlaces en el pie de página -->
+      <div>
+        <a href="contacto.html" class="link-primary">Contacto</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- bootstrap -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+    crossorigin="anonymous"></script>
+
+  <script>
+    // Menú hamburguesa personalizado
+    const menuToggle = document.getElementById('menuToggle');
+    const navbarMenu = document.getElementById('navbarMenu');
+
+    if (menuToggle) {
+      menuToggle.addEventListener('click', function () {
+        this.classList.toggle('active');
+        navbarMenu.classList.toggle('active');
+      });
+
+      // Cerrar menú al hacer clic en un enlace
+      navbarMenu.querySelectorAll('.nav-link').forEach(link => {
+        link.addEventListener('click', function () {
+          menuToggle.classList.remove('active');
+          navbarMenu.classList.remove('active');
+        });
+      });
+    }
+  </script>
+
+</body>
+
+</html>

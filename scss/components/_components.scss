@@ -4,38 +4,95 @@
 .card {
   border: 0;
   border-radius: .75rem;
-  box-shadow: 0 6px 24px rgba(0,0,0,.08);
+  box-shadow: 0 6px 24px rgba(0, 0, 0, .08);
   overflow: hidden;
+  @include fade-in-up;
+
+  &-hover {
+    transition: transform map-get($transitions, 'fast') ease;
+    will-change: transform, box-shadow;
+
+    &:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 12px 32px rgba(0, 0, 0, .12);
+    }
+  }
+
+  &-title {
+    margin-bottom: .25rem;
+  }
+
+  &-text {
+    color: color('muted');
+  }
 }
 
-.card-hover {
-  transition: transform $transition-fast ease;
-  will-change: transform, box-shadow;
+.owner-portrait {
+  border-radius: 1rem;
+  box-shadow: 0 6px 24px rgba(0, 0, 0, .08);
 }
 
-.card-hover:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 12px 32px rgba(0,0,0,.12);
+.link-secondary {
+  color: color('muted');
 }
-
-.card-title { margin-bottom: .25rem; }
-.card-text { color: $color-muted; }
-
-.owner-portrait { border-radius: 1rem; box-shadow: 0 6px 24px rgba(0,0,0,.08); }
-
-.link-secondary { color: $color-muted; }
 
 /* Navbar toggle */
-.navbar-menu-toggle { background: none; border: none; cursor: pointer; display:flex; flex-direction: column; gap:6px; padding:0; }
-.navbar-menu-toggle span { width:28px; height:3px; background-color: $color-accent; border-radius:2px; transition: all 0.3s ease; display:block; }
-.navbar-menu-toggle.active span:nth-child(1) { transform: rotate(45deg) translate(10px,10px); }
-.navbar-menu-toggle.active span:nth-child(2) { opacity: 0; }
-.navbar-menu-toggle.active span:nth-child(3) { transform: rotate(-45deg) translate(8px,-8px); }
+.navbar-menu-toggle {
+  background: none;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  padding: 0;
 
-.navbar .nav-link { color: $color-dark; transition: color $transition-fast ease; }
-.navbar .nav-link:hover, .navbar .nav-link.active { color: $color-accent; }
+  span {
+    width: 28px;
+    height: 3px;
+    background-color: color('accent');
+    border-radius: 2px;
+    transition: all 0.3s ease;
+    display: block;
+  }
+
+  &.active {
+    span:nth-child(1) {
+      transform: rotate(45deg) translate(10px, 10px);
+    }
+
+    span:nth-child(2) {
+      opacity: 0;
+    }
+
+    span:nth-child(3) {
+      transform: rotate(-45deg) translate(8px, -8px);
+    }
+  }
+}
+
+.navbar .nav-link {
+  color: color('dark');
+  transition: color map-get($transitions, 'fast') ease;
+
+  &:hover,
+  &.active {
+    color: color('accent');
+  }
+}
 
 /* Formulario */
-.contact-form { max-width: 720px; }
-.contact-form .form-control { border-radius: .5rem; border: 1px solid #dee2e6; padding: .625rem .75rem; }
-.contact-form .form-control:focus { outline: none; border-color: $color-accent; box-shadow: 0 0 0 .25rem rgba(178,58,72,.15); }
+.contact-form {
+  max-width: 720px;
+
+  .form-control {
+    border-radius: .5rem;
+    border: 1px solid #dee2e6;
+    padding: .625rem .75rem;
+
+    &:focus {
+      outline: none;
+      border-color: color('accent');
+      box-shadow: 0 0 0 .25rem rgba(178, 58, 72, .15);
+    }
+  }
+}

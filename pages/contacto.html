@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description"
+    content="Contáctanos - CandyBarbi. Haz tus pedidos o consultas sobre nuestros dulces artesanales.">
+  <meta name="keywords" content="contacto, candybarbi, pedidos, dulces, punta arenas">
+  <title>CandyBarbi | Contacto</title>
+  <!-- bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  <link href="../assets/css/style.css" rel="stylesheet">
+</head>
+
+<body class="theme-light">
+  <header class="sticky-top shadow-sm bg-white">
+    <nav class="navbar container">
+      <a class="navbar-brand d-flex align-items-center me-4" href="../index.html">
+        <img src="../assets/img/placeholders/logo-S.F.png" alt="CandyBarbi logo" width="80" height="60" class="me-2">
+        <span class="brand-title">CandyBarbi</span>
+      </a>
+      <button class="navbar-menu-toggle d-none d-md-none" type="button" id="menuToggle" aria-label="Toggle navigation">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <ul class="navbar-nav flex-row gap-3" id="navbarMenu">
+        <li class="nav-item"><a class="nav-link" href="../index.html">Inicio</a></li>
+        <li class="nav-item"><a class="nav-link" href="productos.html">Productos</a></li>
+        <li class="nav-item"><a class="nav-link" href="sobre-nosotros.html">Sobre Nosotros</a></li>
+        <li class="nav-item"><a class="nav-link active" href="contacto.html" aria-current="page">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Contenido principal de la página, -->
+  <main class="container py-5">
+    <div class="row g-5">
+      <div class="col-12 col-lg-6">
+        <h1 class="h2 mb-3">Contáctanos</h1>
+        <p class="lead-text-secondary">Nos encantaría saber de ti. Visítanos en Punta Arenas o contáctanos por correo
+          electrónico o teléfono. Cuéntanos sobre tu evento, pedidos personalizados o sabores favoritos.</p>
+        <div class="contact-details mt-4">
+          <p> <img src="../assets/img/gmail.png" width="40" height="40" alt=""> <strong></strong> <a
+              href="mailto:Candybarbi03@gmail.com">Candybarbi03@gmail.com</a></p>
+          <p> <img src="../assets/img/whatsapp.png" width="40" height="40" alt=""> <strong></strong> <a
+              href="https://api.whatsapp.com/message/AD6RVL6SGGOEG1?autoload=1&app_absent=0&utm_source=ig"
+              target="_blank">+56 9 9798 8410</a></p>
+          <p> <img src="../assets/img/instagram.png" width="40" height="40" alt=""> <strong></strong> <a
+              href="https://www.instagram.com/candybarbi03?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
+              target="_blank">@candybarbi03</a></p>
+          <p> <img src="../assets/img/tik-tok.png" width="40" height="40" alt=""> <strong></strong> <a
+              href="https://www.tiktok.com/@candybarbi03?is_from_webapp=1&sender_device=pc">CandyBarbi</a></p>
+          <p> <img src="../assets/img/facebook.png" width="40" height="40" alt=""> <strong></strong> <a
+              href="https://www.facebook.com/profile.php?id=100029264513668&sk=about&locale=es_LA"
+              target="_blank">CandyBarbi</a></p>
+        </div>
+      </div>
+      <div class="col-12 col-lg-6">
+        <h2 class="h4 mb-3">Formulario de Contacto</h2>
+        <form class="contact-form" action="mailto:Candybarbi03@gmail.com" method="post" enctype="text/plain">
+          <div class="mb-3">
+            <label for="name" class="form-label">Nombre</label>
+            <input type="text" id="name" name="name" class="form-control" required
+              placeholder="Escriba su Nombre completo...">
+          </div>
+          <div class="mb-3">
+            <label for="email" class="form-label">Email</label>
+            <input type="email" id="email" name="email" class="form-control" required
+              placeholder="Proporcionar su mejor email...">
+          </div>
+          <div class="mb-3">
+            <label for="message" class="form-label">Mensaje</label>
+            <textarea id="message" name="message" rows="5" class="form-control" required
+              placeholder="Ingrese su mensaje"></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary">Enviar</button>
+          <span class="sr-only">Al enviar se abre su cliente de correo electrónico</span>
+        </form>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer mt-auto py-4 bg-light">
+    <!-- Contenedor del pie de página, distribuye el contenido a los extremos -->
+    <div class="container d-flex justify-content-between align-items-center">
+      <!-- Información de copyright y ubicación -->
+      <p class="mb-0">© 2025 CandyBarbi — Magallanes-Punta Arenas-Chile</p>
+    </div>
+  </footer>
+
+  <!-- bootstrap -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+    crossorigin="anonymous"></script>
+
+  <script>
+    // Menú hamburguesa personalizado
+    const menuToggle = document.getElementById('menuToggle');
+    const navbarMenu = document.getElementById('navbarMenu');
+
+    if (menuToggle) {
+      menuToggle.addEventListener('click', function () {
+        this.classList.toggle('active');
+        navbarMenu.classList.toggle('active');
+      });
+
+      // Cerrar menú al hacer clic en un enlace
+      navbarMenu.querySelectorAll('.nav-link').forEach(link => {
+        link.addEventListener('click', function () {
+          menuToggle.classList.remove('active');
+          navbarMenu.classList.remove('active');
+        });
+      });
+    }
+  </script>
+
+</body>
+
+</html

@@ -1,8 +1,19 @@
 // Variables de colores y configuración global
-$color-text: #1f1f1f;
-$color-primary: #e649be;
-$color-accent: #b23a48;
-$color-muted: #6c757d;
-$color-dark: #080808;
+$theme-colors: (
+  "text": #1f1f1f,
+  "primary": #e649be,
+  "accent": #b23a48,
+  "muted": #6c757d,
+  "dark": #080808,
+  "light": #ffffff
+);
 
-$transition-fast: 0.25s;
+$transitions: (
+  "fast": 0.25s,
+  "normal": 0.5s
+);
+
+// Function to get color from map
+@function color($key) {
+  @return map-get($theme-colors, $key);
+}

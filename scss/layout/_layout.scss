@@ -1,14 +1,60 @@
 @use '../settings' as *;
 
-/* Navbar y layout responsivo */
-/* Navbar y layout responsivo */
+/* Navbar */
 .navbar {
   padding-block: .75rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
 
-  /* Menú responsive en móvil */
+  // Toggle button for mobile
+  &-menu-toggle {
+    background: none;
+    border: none;
+    cursor: pointer;
+    display: none; // Hidden on desktop
+    flex-direction: column;
+    gap: 6px;
+    padding: 0;
+
+    span {
+      width: 28px;
+      height: 3px;
+      background-color: color('accent');
+      border-radius: 2px;
+      transition: all map-get($transitions, 'fast') ease;
+      display: block;
+    }
+
+    &.active {
+      span:nth-child(1) {
+        transform: rotate(45deg) translate(10px, 10px);
+      }
+
+      span:nth-child(2) {
+        opacity: 0;
+      }
+
+      span:nth-child(3) {
+        transform: rotate(-45deg) translate(8px, -8px);
+      }
+    }
+  }
+
+  // Links styling
+  .nav-link {
+    color: color('dark');
+    transition: color map-get($transitions, 'fast') ease;
+    text-decoration: none;
+    font-weight: 500;
+
+    &:hover,
+    &.active {
+      color: color('accent'); // Active/Hover color
+    }
+  }
+
+  /* Responsive Mobile Menu */
   @media (max-width: 767px) {
     &-menu-toggle {
       display: flex !important;
@@ -27,14 +73,17 @@
       max-height: 0;
       overflow: hidden;
       transition: max-height 0.3s ease;
+      z-index: 1000; // Ensure it sits on top
 
       &.active {
         max-height: 500px;
+        box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
       }
 
       .nav-link {
         padding: 0.75rem 1.5rem !important;
         border-bottom: 1px solid #f5f5f5;
+        display: block;
 
         &:last-child {
           border-bottom: none;
@@ -44,10 +93,12 @@
   }
 }
 
+/* Hero */
 .hero .display-5 {
   font-size: clamp(2rem, 2vw + 1rem, 3rem);
 }
 
+/* Footer */
 .footer {
   border-top: 1px solid #eee;
 
@@ -56,7 +107,7 @@
   }
 }
 
-/* Grid Layout Implementation */
+/* Grid Products */
 .grid-products {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
